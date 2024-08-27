@@ -1,0 +1,38 @@
+body{
+    height: 3000px;
+    background-color: #161623;
+    display: flex;
+    align-items: center;
+     
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    
+}
+#t{
+    height: 200px;
+    width: 200px;
+    color: red;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+#o{
+    position: relative;
+    top: -1470px;
+    /* left: 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:red;
+    height: 60px;
+    width: 100vw;
+}
+
+#s{
+    position: relative;
+    top: 0px;
+    color: white;
+    text-decoration-line: none;
+}
+
+

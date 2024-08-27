@@ -1,0 +1,124 @@
+.product{
+  position: absolute;
+  top: 130px;
+  left: 1060px;
+  transform: translateX(-50%);
+  --left:0px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.soda{
+  position: absolute;
+  background: url("bg.png") var(--left) 0,
+  url("freepik-export-20240719090403IRFb.png");
+  background-size: auto 100% ;
+  aspect-ratio: 2/4;
+  width: 280px;
+  background-blend-mode: multiply;
+  mask-image: url("freepik-export-20240719090403IRFb.png");
+  mask-size: auto 100%;
+  transition: 2s;
+}
+ .product:hover{
+  --left: -1900px;
+}
+
+.t a{
+  position: absolute;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  top: 380px;
+  padding: 15px 30px;
+  left: 280px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600px;
+  height: 60px;
+  width: 160px;
+  border-radius: 10px;
+  -webkit-box-reflect: below 0px linear-gradient(90deg,transparent);
+  transition: 0.7s;
+}
+.t  a:hover{
+  background: red;
+  color: white;
+  box-shadow: 0 0 5px red,
+              0 0 25px red,
+              0 0 50px red,
+              0 0 100px red;
+}
+#ir:hover{
+  background: #03e9f4;
+  
+  color: white;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px#03e9f4,
+              0 0 50px#03e9f4,
+              0 0 100px #03e9f4;
+}
+
+#ir{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 80px;
+  border: none;
+
+}
+.hs{
+  position: absolute;
+  color: red;
+  top: 40px;
+  white-space: nowrap;
+  font-size: 2rem;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+.hss{
+  display: inline-block;
+  animation:21s motion infinite linear;
+
+}
+@keyframes motion {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+.pss{
+  position: absolute;
+  display: flex;
+  height: 500px;
+  width: 500px;
+  top: 130px;
+  left: 100px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  z-index: 1;
+  backdrop-filter: blur(10px); /* Add blur effect for Glassmorphism */
+  -webkit-backdrop-filter: blur(10px); /* Add blur effect for Safari */
+  
+}
+.p1{
+  position: absolute;
+  /* background-color: red;
+  height: 500px;
+  width: 600px; */
+  top: 130px;
+  left: 100px;
+  font-weight: 1000px;
+  letter-spacing: 3px;
+  line-height: 30px;
+  font-size: 1.3rem;
+  color: white;
+}

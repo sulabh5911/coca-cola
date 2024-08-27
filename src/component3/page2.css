@@ -1,0 +1,85 @@
+body{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #151515;
+    min-height: 100vh;
+}
+
+.card{
+    position:absolute;
+    top: 800px;
+    left: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    transition: 0.5s;
+    border-radius: 20px;
+    transition-delay: 0.5s;
+}
+.card:hover{
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.card .circle{
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+.card .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid red;
+    filter:drop-shadow(0 0 10px red)drop-shadow(0 0 60px red);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s,1s;
+}
+.card:hover .circle::before{
+    transition-delay:0.5s;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: red;
+}
+.card .circle .logo{
+    position: relative;
+    width: 250px;
+    transition: 0.6s;
+    transition-delay: 0.8s;
+}
+.card:hover .circle .logo{
+    transform:scale(0);
+    transition-delay: 0s;
+}
+.card .i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+.card:hover .i{
+    transition-delay: 0.75s;
+    position: absolute;
+    top: -40%;
+    left: 72%;
+    height: 500px;
+    transform: translate(-50%,50%) scale(1) rotate(15deg);
+}
